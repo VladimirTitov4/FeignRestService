@@ -7,8 +7,7 @@ import java.util.Map;
 
 @Data
 public class HistoricalRubleCurrency {
-    @JsonProperty("timestamp")
-    private long timestamp;
+
     private Double rubleValue;
 
     @JsonProperty("rates")
