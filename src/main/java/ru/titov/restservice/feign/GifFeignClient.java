@@ -2,7 +2,7 @@ package ru.titov.restservice.feign;
 
 import feign.Param;
 import feign.RequestLine;
-import ru.titov.restservice.dto.Response;
+import ru.titov.restservice.dto.gif.Response;
 
 public interface GifFeignClient {
 

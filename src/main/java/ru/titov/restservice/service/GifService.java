@@ -3,7 +3,7 @@ package ru.titov.restservice.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import ru.titov.restservice.dto.Response;
+import ru.titov.restservice.dto.gif.Response;
 import ru.titov.restservice.feign.GifFeignClient;
 
 @Service
