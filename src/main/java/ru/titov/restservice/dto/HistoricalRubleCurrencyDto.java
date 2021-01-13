@@ -6,12 +6,12 @@ import lombok.Data;
 import java.util.Map;
 
 @Data
-public class HistoricalRubleCurrency {
+public class HistoricalRubleCurrencyDto {
 
-    private Double rubleValue;
+    public String rubleValue;
 
     @JsonProperty("rates")
-    private void unpackNested(Map<String, Double> rate) {
+    public void unpackNested(Map<String, String> rate) {
         this.rubleValue = rate.get("RUB");
     }
 }

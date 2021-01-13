@@ -3,7 +3,7 @@ package ru.titov.restservice.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import ru.titov.restservice.dto.gif.Response;
+import ru.titov.restservice.dto.gif.ResponseDto;
 import ru.titov.restservice.feign.GifFeignClient;
 
 @Service
@@ -15,7 +15,7 @@ public class GifService {
 
     private final GifFeignClient gifFeignClient;
 
-    public Response getRandomGif(String tag) {
+    public ResponseDto getRandomGif(String tag) {
         return gifFeignClient.getRandomGif(apiKey, tag);
     }
 }
